@@ -8,53 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Minimal golden theme */
-    --background: 0 0% 99%;
-    --foreground: 0 0% 12%;
+    /* Ocean-inspired minimal theme */
+    --background: 210 20% 98%;
+    --foreground: 210 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 12%;
+    --card-foreground: 210 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 12%;
+    --popover-foreground: 210 25% 15%;
 
-    --primary: 45 89% 65%;
+    --primary: 197 84% 65%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 12%;
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 210 25% 15%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 210 15% 93%;
+    --muted-foreground: 210 15% 50%;
 
-    --accent: 45 89% 65%;
-    --accent-foreground: 0 0% 12%;
+    --accent: 186 77% 68%;
+    --accent-foreground: 210 25% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 45 89% 65%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 197 84% 65%;
 
-    /* Minimal golden design tokens */
-    --gold: 45 89% 65%;
-    --gold-light: 48 85% 75%;
-    --gold-dark: 42 80% 45%;
-    --gold-accent: 50 90% 60%;
+    /* Ocean-inspired design tokens */
+    --ocean: 197 84% 65%;
+    --ocean-light: 186 77% 68%;
+    --ocean-dark: 207 90% 45%;
+    --sea-foam: 166 45% 85%;
+    --sand: 35 25% 88%;
+    --pearl: 210 15% 92%;
     
-    /* Subtle gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45 89% 65%), hsl(48 85% 75%));
-    --gradient-minimal: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 99%) 100%);
+    /* Ocean gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(197 84% 65%), hsl(186 77% 68%));
+    --gradient-wave: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --gradient-sand: linear-gradient(135deg, hsl(35 25% 88%), hsl(210 15% 92%));
     
     /* Subtle shadows */
-    --shadow-minimal: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-gold: 0 4px 14px 0 hsl(45 89% 65% / 0.15);
+    --shadow-wave: 0 1px 3px 0 rgb(197 220 235 / 0.3), 0 1px 2px -1px rgb(197 220 235 / 0.3);
+    --shadow-ocean: 0 4px 14px 0 hsl(197 84% 65% / 0.15);
+    --shadow-pearl: 0 8px 25px -5px hsl(210 15% 92% / 0.4);
     
-    /* Smooth transitions */
-    --transition-minimal: all 0.2s ease-in-out;
+    /* Smooth ocean transitions */
+    --transition-wave: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 

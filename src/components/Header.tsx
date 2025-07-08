@@ -18,8 +18,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-gold">
-              LuxeAccess
+            <h1 className="text-2xl font-light text-ocean">
+              Olas
             </h1>
           </div>
 
@@ -29,29 +29,29 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground/80 hover:text-gold transition-minimal font-medium relative group"
+                className="text-foreground/80 hover:text-ocean transition-wave font-light relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-200 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-ocean transition-all duration-200 group-hover:w-full"></span>
               </a>
             ))}
           </nav>
 
           {/* Search, Login, Cart */}
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="sm" className="hidden sm:flex text-foreground/60 hover:text-gold">
+            <Button variant="ghost" size="sm" className="hidden sm:flex text-foreground/60 hover:text-ocean">
               <Search className="h-4 w-4" />
             </Button>
             
-            <Button variant="gold-minimal" size="sm" className="hidden sm:flex">
+            <Button variant="ocean-outline" size="sm" className="hidden sm:flex">
               <User className="h-4 w-4 mr-2" />
               Iniciar sesión
             </Button>
             
-            <Button variant="primary-gold" size="sm" className="relative">
+            <Button variant="wave" size="sm" className="relative">
               <ShoppingCart className="h-4 w-4 mr-2" />
               <span className="hidden sm:inline">Carrito</span>
-              <span className="absolute -top-1 -right-1 bg-gold text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center text-[10px]">
+              <span className="absolute -top-1 -right-1 bg-ocean text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center text-[10px]">
                 0
               </span>
             </Button>
@@ -76,7 +76,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-foreground/80 hover:text-gold hover:bg-muted rounded-md transition-minimal"
+                  className="block px-3 py-2 text-foreground/80 hover:text-ocean hover:bg-muted rounded-md transition-wave"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

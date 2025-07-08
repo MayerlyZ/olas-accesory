@@ -63,24 +63,32 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				gold: {
-					DEFAULT: 'hsl(var(--gold))',
-					light: 'hsl(var(--gold-light))',
-					dark: 'hsl(var(--gold-dark))',
-					metallic: 'hsl(var(--gold-metallic))'
+					DEFAULT: 'hsl(var(--ocean))',
+					light: 'hsl(var(--ocean-light))',
+					dark: 'hsl(var(--ocean-dark))',
+					metallic: 'hsl(var(--sea-foam))'
+				},
+				ocean: {
+					DEFAULT: 'hsl(var(--ocean))',
+					light: 'hsl(var(--ocean-light))',
+					dark: 'hsl(var(--ocean-dark))',
+					foam: 'hsl(var(--sea-foam))',
+					sand: 'hsl(var(--sand))',
+					pearl: 'hsl(var(--pearl))'
 				}
 			},
 			backgroundImage: {
-				'gradient-gold': 'var(--gradient-gold)',
-				'gradient-minimal': 'var(--gradient-minimal)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-ocean': 'var(--gradient-ocean)',
+				'gradient-wave': 'var(--gradient-wave)',
+				'gradient-sand': 'var(--gradient-sand)'
 			},
 			boxShadow: {
-				'minimal': 'var(--shadow-minimal)',
-				'card': 'var(--shadow-card)',
-				'gold': 'var(--shadow-gold)'
+				'wave': 'var(--shadow-wave)',
+				'ocean': 'var(--shadow-ocean)',
+				'pearl': 'var(--shadow-pearl)'
 			},
 			transitionTimingFunction: {
-				'minimal': 'var(--transition-minimal)'
+				'wave': 'var(--transition-wave)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

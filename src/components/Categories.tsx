@@ -1,32 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import jewelryImage from "@/assets/jewelry-collection.jpg";
-import handbagsImage from "@/assets/handbags-collection.jpg";
-import watchesImage from "@/assets/watches-sunglasses.jpg";
+import summerImage from "@/assets/summer-accessories.jpg";
+import beachwearImage from "@/assets/beachwear-collection.jpg";
+import wellnessImage from "@/assets/wellness-ocean.jpg";
 
 const Categories = () => {
   const categories = [
     {
       id: 1,
-      name: "Joyería",
-      description: "Collares, aretes, pulseras y anillos de oro y plata",
-      image: jewelryImage,
-      itemCount: "150+ productos",
+      name: "Accesorios de Verano",
+      description: "Bolsos de playa, gafas de sol, joyas inspiradas en el océano",
+      image: summerImage,
+      itemCount: "120+ productos",
     },
     {
       id: 2,
-      name: "Bolsos",
-      description: "Bolsos de cuero premium y carteras elegantes",
-      image: handbagsImage,
+      name: "Ropa de Playa",
+      description: "Trajes de baño, pareos, ropa de playa elegante",
+      image: beachwearImage,
       itemCount: "80+ productos",
     },
     {
       id: 3,
-      name: "Relojes & Gafas",
-      description: "Relojes de lujo y gafas de sol de diseñador",
-      image: watchesImage,
-      itemCount: "120+ productos",
+      name: "Bienestar Oceánico",
+      description: "Productos de spa, cuidado de la piel, aromaterapia marina",
+      image: wellnessImage,
+      itemCount: "100+ productos",
     },
   ];
 
@@ -34,11 +34,11 @@ const Categories = () => {
     <section id="categorias" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-light text-foreground mb-6">
-            Nuestras <span className="text-gold font-normal">Categorías</span>
+          <h2 className="text-4xl md:text-5xl font-extralight text-foreground mb-6">
+            Nuestras <span className="text-ocean font-light">Categorías</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light">
-            Explora nuestra cuidadosa selección de accesorios premium organizados por categorías
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-extralight">
+            Explora nuestra cuidadosa selección inspirada en el océano y el verano
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const Categories = () => {
           {categories.map((category) => (
             <Card 
               key={category.id} 
-              className="group overflow-hidden bg-card border border-border hover:shadow-card transition-minimal hover:-translate-y-1"
+              className="group overflow-hidden bg-card border border-border hover:shadow-wave transition-wave hover:-translate-y-1"
             >
               <div className="relative h-64 overflow-hidden">
                 <img
@@ -54,9 +54,9 @@ const Categories = () => {
                   alt={category.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <span className="inline-block px-3 py-1 bg-gold/90 rounded-full text-sm font-medium">
+                  <span className="inline-block px-3 py-1 bg-ocean/90 rounded-full text-sm font-light">
                     {category.itemCount}
                   </span>
                 </div>
@@ -64,9 +64,9 @@ const Categories = () => {
               
               <CardContent className="p-8">
                 <h3 className="text-2xl font-light text-foreground mb-3">{category.name}</h3>
-                <p className="text-muted-foreground mb-6 font-light leading-relaxed">{category.description}</p>
+                <p className="text-muted-foreground mb-6 font-extralight leading-relaxed">{category.description}</p>
                 
-                <Button variant="gold-minimal" className="w-full group">
+                <Button variant="ocean-outline" className="w-full group">
                   Ver Productos
                   <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
                 </Button>
@@ -76,7 +76,7 @@ const Categories = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="primary-gold" size="lg" className="group">
+          <Button variant="wave" size="lg" className="group">
             Ver Todas las Categorías
             <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
           </Button>
