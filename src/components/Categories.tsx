@@ -31,30 +31,30 @@ const Categories = () => {
   ];
 
   return (
-    <section id="categorias" className="py-20 bg-gradient-gold-subtle">
+    <section id="categorias" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Nuestras <span className="text-gold">Categorías</span>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-light text-foreground mb-6">
+            Nuestras <span className="text-gold font-normal">Categorías</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light">
             Explora nuestra cuidadosa selección de accesorios premium organizados por categorías
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {categories.map((category) => (
             <Card 
               key={category.id} 
-              className="group overflow-hidden bg-card/80 backdrop-blur-sm border-gold/20 hover:shadow-elegant transition-all duration-500 hover:scale-105"
+              className="group overflow-hidden bg-card border border-border hover:shadow-card transition-minimal hover:-translate-y-1"
             >
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={category.image}
                   alt={category.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
                   <span className="inline-block px-3 py-1 bg-gold/90 rounded-full text-sm font-medium">
                     {category.itemCount}
@@ -62,11 +62,11 @@ const Categories = () => {
                 </div>
               </div>
               
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-2">{category.name}</h3>
-                <p className="text-muted-foreground mb-4">{category.description}</p>
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-light text-foreground mb-3">{category.name}</h3>
+                <p className="text-muted-foreground mb-6 font-light leading-relaxed">{category.description}</p>
                 
-                <Button variant="gold-outline" className="w-full group">
+                <Button variant="gold-minimal" className="w-full group">
                   Ver Productos
                   <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
                 </Button>
@@ -75,8 +75,8 @@ const Categories = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="luxury" size="lg" className="group">
+        <div className="text-center">
+          <Button variant="primary-gold" size="lg" className="group">
             Ver Todas las Categorías
             <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
           </Button>

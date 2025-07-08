@@ -26,14 +26,14 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre-nosotros" className="py-20 bg-background">
+    <section id="sobre-nosotros" className="py-24 bg-gradient-minimal">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Sobre <span className="text-gold">LuxeAccess</span>
+            <h2 className="text-4xl md:text-5xl font-light text-foreground mb-8">
+              Sobre <span className="text-gold font-normal">LuxeAccess</span>
             </h2>
-            <div className="space-y-6 text-lg text-muted-foreground">
+            <div className="space-y-8 text-lg text-muted-foreground font-light leading-relaxed">
               <p>
                 Desde 2020, LuxeAccess ha sido sinónimo de elegancia y calidad en el mundo de los accesorios de lujo. 
                 Nuestra pasión por la excelencia nos ha llevado a convertirnos en la tienda preferida de miles de clientes 
@@ -55,24 +55,24 @@ const About = () => {
             {features.map((feature, index) => (
               <Card 
                 key={index} 
-                className="bg-card/50 backdrop-blur-sm border-gold/20 hover:shadow-gold transition-all duration-300 hover:scale-105"
+                className="bg-card border border-border hover:shadow-card transition-minimal hover:-translate-y-1"
               >
-                <CardContent className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-4">
-                    <feature.icon className="h-8 w-8 text-primary-foreground" />
+                <CardContent className="p-8 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gold/10 rounded-2xl mb-6">
+                    <feature.icon className="h-8 w-8 text-gold" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm">{feature.description}</p>
+                  <h3 className="text-xl font-medium text-foreground mb-3">{feature.title}</h3>
+                  <p className="text-muted-foreground text-sm font-light leading-relaxed">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
 
-        <div className="mt-20 text-center">
-          <div className="inline-block p-8 bg-gradient-gold-subtle rounded-2xl border border-gold/20">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Nuestra Misión</h3>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <div className="mt-24 text-center">
+          <div className="inline-block p-12 bg-card rounded-3xl border border-border shadow-card">
+            <h3 className="text-3xl font-light text-foreground mb-6">Nuestra Misión</h3>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
               Hacer que el lujo sea accesible para todos, ofreciendo accesorios de la más alta calidad 
               a precios justos, con un servicio al cliente excepcional que supere todas las expectativas.
             </p>

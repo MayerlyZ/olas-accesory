@@ -29,23 +29,23 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contactanos" className="py-20 bg-gradient-gold-subtle">
+    <section id="contactanos" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            <span className="text-gold">Contáctanos</span>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-light text-foreground mb-6">
+            <span className="text-gold font-normal">Contáctanos</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light">
             Estamos aquí para ayudarte. Contáctanos y te responderemos en menos de 24 horas.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-bold text-foreground mb-6">¿Tienes alguna pregunta?</h3>
-              <p className="text-lg text-muted-foreground mb-8">
+              <h3 className="text-3xl font-light text-foreground mb-6">¿Tienes alguna pregunta?</h3>
+              <p className="text-lg text-muted-foreground mb-8 font-light leading-relaxed">
                 Nuestro equipo de atención al cliente está disponible para ayudarte con cualquier consulta 
                 sobre nuestros productos, envíos, devoluciones o servicios personalizados.
               </p>
@@ -53,15 +53,15 @@ const Contact = () => {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {contactInfo.map((item, index) => (
-                <Card key={index} className="bg-card/80 backdrop-blur-sm border-gold/20">
+                <Card key={index} className="bg-card border border-border hover:shadow-card transition-minimal">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
-                        <item.icon className="h-6 w-6 text-primary-foreground" />
+                      <div className="flex-shrink-0 w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center">
+                        <item.icon className="h-6 w-6 text-gold" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">{item.title}</h4>
-                        <p className="text-muted-foreground text-sm whitespace-pre-line">{item.info}</p>
+                        <h4 className="font-medium text-foreground mb-2">{item.title}</h4>
+                        <p className="text-muted-foreground text-sm font-light whitespace-pre-line leading-relaxed">{item.info}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -71,44 +71,45 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-card/80 backdrop-blur-sm border-gold/20 shadow-elegant">
+          <Card className="bg-card border border-border shadow-card">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Envíanos un mensaje</h3>
+              <h3 className="text-2xl font-light text-foreground mb-8">Envíanos un mensaje</h3>
               
               <form className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
+                    <label className="block text-sm font-medium text-foreground mb-3">
                       Nombre
                     </label>
-                    <Input placeholder="Tu nombre completo" />
+                    <Input placeholder="Tu nombre completo" className="h-12" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
+                    <label className="block text-sm font-medium text-foreground mb-3">
                       Email
                     </label>
-                    <Input type="email" placeholder="tu@email.com" />
+                    <Input type="email" placeholder="tu@email.com" className="h-12" />
                   </div>
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-foreground mb-3">
                     Asunto
                   </label>
-                  <Input placeholder="¿En qué podemos ayudarte?" />
+                  <Input placeholder="¿En qué podemos ayudarte?" className="h-12" />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-foreground mb-3">
                     Mensaje
                   </label>
                   <Textarea 
                     placeholder="Cuéntanos más detalles sobre tu consulta..."
                     rows={5}
+                    className="resize-none"
                   />
                 </div>
                 
-                <Button variant="luxury" className="w-full">
+                <Button variant="primary-gold" className="w-full h-12">
                   Enviar Mensaje
                 </Button>
               </form>

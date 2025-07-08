@@ -8,53 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Golden luxury theme */
-    --background: 40 20% 97%;
-    --foreground: 35 25% 15%;
+    /* Minimal golden theme */
+    --background: 0 0% 99%;
+    --foreground: 0 0% 12%;
 
-    --card: 45 50% 96%;
-    --card-foreground: 35 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 45 50% 96%;
-    --popover-foreground: 35 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 45 90% 45%;
-    --primary-foreground: 45 10% 95%;
+    --primary: 45 89% 65%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 42 25% 88%;
-    --secondary-foreground: 35 25% 15%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 12%;
 
-    --muted: 42 25% 88%;
-    --muted-foreground: 35 15% 55%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 48 100% 50%;
-    --accent-foreground: 35 25% 15%;
+    --accent: 45 89% 65%;
+    --accent-foreground: 0 0% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 42 20% 85%;
-    --input: 42 20% 85%;
-    --ring: 45 90% 45%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 45 89% 65%;
 
-    /* Custom golden design tokens */
-    --gold: 45 90% 45%;
-    --gold-light: 48 85% 65%;
-    --gold-dark: 42 80% 35%;
-    --gold-metallic: 50 75% 55%;
+    /* Minimal golden design tokens */
+    --gold: 45 89% 65%;
+    --gold-light: 48 85% 75%;
+    --gold-dark: 42 80% 45%;
+    --gold-accent: 50 90% 60%;
     
-    /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45 90% 45%), hsl(48 100% 50%));
-    --gradient-gold-subtle: linear-gradient(180deg, hsl(45 50% 96%), hsl(42 25% 88%));
-    --gradient-hero: linear-gradient(135deg, hsl(35 25% 15%) 0%, hsl(45 90% 45%) 100%);
+    /* Subtle gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(45 89% 65%), hsl(48 85% 75%));
+    --gradient-minimal: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 99%) 100%);
     
-    /* Shadows */
-    --shadow-gold: 0 10px 30px -10px hsl(45 90% 45% / 0.3);
-    --shadow-elegant: 0 20px 60px -10px hsl(45 90% 45% / 0.2);
+    /* Subtle shadows */
+    --shadow-minimal: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-gold: 0 4px 14px 0 hsl(45 89% 65% / 0.15);
     
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Smooth transitions */
+    --transition-minimal: all 0.2s ease-in-out;
 
     --radius: 0.5rem;
 
