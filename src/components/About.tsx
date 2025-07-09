@@ -30,13 +30,14 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-extralight text-foreground mb-8">
-              Sobre <span className="text-ocean font-light">Olas</span>
+            <h2 className="text-4xl md:text-5xl font-extralight text-foreground mb-8"><b>
+              Sobre </b><span className="text-ocean font-light"><b>Olas</b></span>
             </h2>
             <div className="space-y-8 text-lg text-muted-foreground font-extralight leading-relaxed">
-              <p>
+              <p> 
                 Desde 2022, Olas ha sido un refugio para aquellos que buscan conectar con la serenidad del océano. 
                 Nacimos de la pasión por el mar, el verano eterno y la belleza natural que nos rodea.
+                
               </p>
               <p>
                 Nuestra colección se inspira en los ritmos del océano, los colores del atardecer en la playa y 
@@ -46,6 +47,7 @@ const About = () => {
               <p>
                 En Olas, creemos que el bienestar viene de la conexión con la naturaleza. Por eso, todo lo que 
                 ofrecemos está diseñado para nutrir tu cuerpo, calmar tu mente y inspirar tu espíritu aventurero.
+                
               </p>
             </div>
           </div>

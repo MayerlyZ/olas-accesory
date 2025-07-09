@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Waves } from "lucide-react";
-import heroImage from "@/assets/hero-ocean.jpg";
+
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ background: `url(../assets/hero-ocean.jpg)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background/40 via-background/70 to-background"></div>
       </div>
@@ -19,17 +19,17 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-ocean/10 border border-ocean/20 mb-8">
             <Waves className="h-4 w-4 text-ocean mr-2" />
-            <span className="text-ocean font-light text-sm">Colección Verano 2024</span>
+            <span className="text-ocean font-light text-sm">Colección Verano 2025</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl font-extralight mb-8 leading-tight tracking-wide">
-            <span className="text-foreground font-extralight">Siente las </span>
-            <span className="text-ocean font-light">Olas</span>
+            <span className="text-foreground font-extralight"> <b>Siente las </b></span>
+            <span className="text-ocean font-light"><b>Olas</b></span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed font-extralight max-w-3xl mx-auto">
-            Descubre nuestra colección inspirada en el océano. Accesorios, ropa de playa y productos de bienestar 
-            que capturan la esencia del verano y la serenidad del mar.
+            Descubre nuestra colección inspirada en la frescura. Accesorios, ropa de playa y productos de bienestar 
+            que capturan la esencia del verano y la serenidad de la vida.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

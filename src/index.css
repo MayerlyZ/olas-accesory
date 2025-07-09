@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+
+
 
 @layer base {
   :root {
     /* Ocean-inspired minimal theme */
-    --background: 210 20% 98%;
+    --background: 210 30% 100%;
     --foreground: 210 25% 15%;
 
     --card: 0 0% 100%;
@@ -46,9 +45,8 @@ All colors MUST be HSL.
     --pearl: 210 15% 92%;
     
     /* Ocean gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(197 84% 65%), hsl(186 77% 68%));
-    --gradient-wave: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
-    --gradient-sand: linear-gradient(135deg, hsl(35 25% 88%), hsl(210 15% 92%));
+   
+    
     
     /* Subtle shadows */
     --shadow-wave: 0 1px 3px 0 rgb(197 220 235 / 0.3), 0 1px 2px -1px rgb(197 220 235 / 0.3);
@@ -78,7 +76,7 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222.2 100% 4.9%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -122,6 +120,12 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+   background-image: url('/4034276_85254.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    font-family: 'Playfair Display', serif;
+    @apply text-foreground;
   }
 }
